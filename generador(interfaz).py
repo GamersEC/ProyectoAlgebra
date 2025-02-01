@@ -17,7 +17,7 @@ class PasswordGeneratorApp(tk.Tk):
 
         # Intento de carga del icono principal
         try:
-            self.icon_image = PhotoImage(file="icon.png")
+            self.icon_image = PhotoImage(file="icons/icon.png")
             self.iconphoto(False, self.icon_image)
         except Exception as e:
             print("Icono principal no encontrado:", e)
@@ -87,7 +87,7 @@ class PasswordGeneratorApp(tk.Tk):
         # Botón de copiar con manejo de icono
         try:
             # Intento cargar icono de copiar
-            original_icon = Image.open("copy_icon.png")
+            original_icon = Image.open("icons/copy_icon.png")
             self.copy_icon = ImageTk.PhotoImage(original_icon.resize((20, 20)))
             copy_button = ttk.Button(
                 buttons_frame,
